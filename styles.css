@@ -45,8 +45,8 @@
   /* Typography */
   --font-base: 'Inter', sans-serif;
   --leading-standard: 1.5;
-  --text-1: 700 1.5rem/1.5 var(--font-base);
-  --text-2: 600 0.875rem/1.5 var(--font-base);
+  --text-1: 600 1.5rem/1.5 var(--font-base);
+  --text-2: 700 0.875rem/1.5 var(--font-base);
   --text-3: 400 0.875rem/1.5 var(--font-base);
 }
 
@@ -69,10 +69,6 @@ p,
 ul {
   margin: 0;
   padding: 0;
-}
-
-h1 {
-  font: var(--text-1);
 }
 
 ul {
@@ -108,11 +104,14 @@ a {
 body {
   background-color: var(--grey-900);
   color: var(--white);
-  display: grid;
-  place-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-family: var(--font-base);
   height: 100vh;
   line-height: var(--leading-standard);
+  margin-inline: var(--spacing-300);
 }
 
 .card {
@@ -122,8 +121,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-inline: auto;
-  max-width: 20.4375rem;
+  max-width: 20.5rem;
   padding: var(--spacing-300);
   text-align: center;
 }
@@ -135,6 +133,11 @@ body {
   gap: var(--spacing-300);
   margin-block-end: var(--spacing-50);
   width: 100%;
+}
+
+.card-heading h2 {
+  font: var(--text-1);
+  margin: 0;
 }
 
 .card p:first-child {
@@ -153,6 +156,10 @@ body {
   box-shadow: inset 0 2px 4px 0 var(--grey-700);
   height: 5.5rem;
   width: 5.5rem;
+}
+
+.card-content {
+  width: 100%;
 }
 
 .card-links {
@@ -180,4 +187,21 @@ body {
   font: var(--text-3);
   padding-block-start: var(--spacing-300);
   text-align: center;
+}
+
+.main-footer a:hover,
+.main-footer a:focus {
+  outline: 3px dotted currentColor;
+  outline-offset: 2px;
+}
+
+@media (min-width: 48rem) {
+  body {
+    margin-inline: var(--spacing-500);
+  }
+
+  .card {
+    padding: var(--spacing-500);
+    min-width: 24rem;
+  }
 }

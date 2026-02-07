@@ -22,18 +22,24 @@
   </head>
   <body>
     <main>
-      <article class="card">
+      <h1 class="sr-only">Jessica Randall's Social Links Profile</h1>
+      <article class="card" aria-label="My Profile">
         <div class="card-heading">
-          <h1>Jessica Randall</h1>
+          <h2>Jessica Randall</h2>
           <img
             src="assets/images/avatar-jessica.jpeg"
             alt="Jessica Randall avatar"
+            width="88"
+            height="88"
           />
         </div>
         <div class="card-content">
           <p>London, United Kingdom</p>
           <p>"Front-end developer and avid reader."</p>
-          <ul class="card-links">
+          <span class="sr-only" id="social-links"
+            >Social Media Links</span
+          >
+          <ul class="card-links" aria-labelledby="social-links">
             <li>
               <a href="https://github.com">GitHub</a>
             </li>
