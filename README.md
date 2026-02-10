@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution]()
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/social-links-profile---bem-css-custom-properties-Q1IEl3wm4x)
 - Live Site URL: [Live Site](https://a-woodworth.github.io/social_link_profile)
 
 ### Built with
